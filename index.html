@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/math.css">
+    <script src="script/script.js"></script>
+    <title>Math Rendering Test</title>
+  </head>
+  <body>
+
+    <article>
+      <h1>Notice</h1>
+      <p>
+        To render mathematical symbols beautifully, download the <a href="https://www.stixfonts.org/">STIX fonts</a> first.
+      </p>
+      <h1>Fraction</h1>
+      <p>
+        <math-root>
+          <math-frac>
+            <math-num>
+              <!-- numerator -->
+              <math-i><math-c data-c="A"></math-c></math-i>
+            </math-num>
+            <math-dencont>
+              <math-den>
+                <!-- denominator -->
+                <math-i><math-c data-c="B"></math-c></math-i>
+              </math-den>
+            </math-dencont>
+          </math-frac>
+        </math-root>
+        or more complicated
+        <math-root>
+          <math-n><math-c data-c="57"></math-c></math-n>
+          <math-o><math-c data-c="⊗"></math-c></math-o>
+          <math-frac>
+            <math-num>
+              <math-i><math-c data-c="φ"></math-c></math-i>
+              <math-o><math-c data-c="⋈"></math-c></math-o>
+              <math-frac>
+                <math-num>
+                  <math-i><math-c data-c="K"></math-c></math-i>
+                </math-num>
+                <math-dencont>
+                  <math-den>
+                    <math-n><math-c data-c="2"></math-c></math-n>
+                  </math-den>
+                </math-dencont>
+              </math-frac>
+            </math-num>
+            <math-dencont>
+              <math-den>
+                <math-n><math-c data-c="5"></math-c></math-n>
+                <math-o><math-c data-c="−"></math-c></math-o>
+                <math-frac>
+                  <math-num>
+                    <math-frac>
+                      <math-num>
+                        <math-n><math-c data-c="1"></math-c></math-n>
+                      </math-num>
+                      <math-dencont>
+                        <math-den>
+                          <math-i><math-c data-c="x"></math-c></math-i>
+                          <math-i><math-c data-c="y"></math-c></math-i>
+                        </math-den>
+                      </math-dencont>
+                    </math-frac>
+                    <math-o><math-c data-c="⨳"></math-c></math-o>
+                    <math-frac>
+                      <math-num>
+                        <math-i><math-c data-c="m"></math-c></math-i>
+                      </math-num>
+                      <math-dencont>
+                        <math-den>
+                          <math-n><math-c data-c="7"></math-c></math-n>
+                          <math-i><math-c data-c="A"></math-c></math-i>
+                        </math-den>
+                      </math-dencont>
+                    </math-frac>
+                  </math-num>
+                  <math-dencont>
+                    <math-den>
+                      <math-i><math-c data-c="Δ"></math-c></math-i>
+                    </math-den>
+                  </math-dencont>
+                </math-frac>
+              </math-den>
+            </math-dencont>
+          </math-frac>
+        </math-root>
+      </p>
+    </article>
+
+  </body>
+</html>
