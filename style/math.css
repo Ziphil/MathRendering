@@ -117,10 +117,11 @@ math-root math-sqrt >math-sqrtcont {
 }
 
 math-root math-sup >math-base {
+  margin: 0.2em 0em 0em 0em;
 }
 
 math-root math-sup >math-scr {
-  margin: -0.2em 0em 0em 0em;
+  margin: 0em 0em 0em 0em;
   vertical-align: top;
   font-size: 70.7%;
 }
