@@ -1,4 +1,5 @@
 mathjax.html
+*.css.map
 *.code-workspace
 .vscode
 desktop.ini
