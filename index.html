@@ -18,7 +18,7 @@
       <p>
         Rendering is tested only on the latest desktop version of Google Chrome, so the layout may be off when viewed with a different browser.
       </p>
-      <h1>Fraction</h1>
+      <h1>Fractions</h1>
       <p>
         <math-root>
           <math-frac>
@@ -96,7 +96,7 @@
           </math-frac>
         </math-root>
       </p>
-      <h1>Radical</h1>
+      <h1>Radicals</h1>
       <p>
         <math-root>
           <math-sqrt>
@@ -186,8 +186,86 @@
         </math-root>
       </p>
       <p>
-        Currently the height of each radical symbol must be manually specified.
+        Currently the height of radical symbols must be manually specified.
         It is a future task to automatically determine it.
+      </p>
+      <h1>Parentheses</h1>
+      <p>
+        <math-root>
+          <!-- left parenthesis -->
+          <math-o class="var l0 r0"><math-c data-c="&#xF003B;"></math-c></math-o>
+          <math-frac>
+            <math-num>
+              <math-n><math-c data-c="1"></math-c></math-n>
+            </math-num>
+            <math-dencont>
+              <math-den>
+                <math-n><math-c data-c="2"></math-c></math-n>
+              </math-den>
+            </math-dencont>
+          </math-frac>
+          <!-- right parenthesis -->
+          <math-o class="var l0 r0"><math-c data-c="&#xF0047;"></math-c></math-o>
+        </math-root>
+      </p>
+      <p>
+        Currently the height of parentheses must be manually specified.
+        It is a future task to automatically determine it.
+      </p>
+      <h1>Superscripts</h1>
+      <p>
+        <math-root>
+          <math-sup>
+            <math-base>
+              <math-i><math-c data-c="A"></math-c></math-i>
+            </math-base>
+            <math-scr>
+              <math-i><math-c data-c="B"></math-c></math-i>
+            </math-scr>
+          </math-sup>
+        </math-root>
+        or
+        <math-root>
+          <math-sup>
+            <math-base>
+              <math-o class="var l0 r0"><math-c data-c="&#xF003B;"></math-c></math-o>
+              <math-frac>
+                <math-num>
+                  <math-n><math-c data-c="1"></math-c></math-n>
+                </math-num>
+                <math-dencont>
+                  <math-den>
+                    <math-i><math-c data-c="X"></math-c></math-i>
+                  </math-den>
+                </math-dencont>
+              </math-frac>
+              <math-o><math-c data-c="−"></math-c></math-o>
+              <math-frac>
+                <math-num>
+                  <math-n><math-c data-c="1"></math-c></math-n>
+                </math-num>
+                <math-dencont>
+                  <math-den>
+                    <math-i><math-c data-c="Y"></math-c></math-i>
+                  </math-den>
+                </math-dencont>
+              </math-frac>
+              <math-o class="var l0 r0"><math-c data-c="&#xF0047;"></math-c></math-o>
+            </math-base>
+            <math-scr>
+              <math-sup>
+                <math-base>
+                  <math-i><math-c data-c="N"></math-c></math-i>
+                </math-base>
+                <math-scr>
+                  <math-n><math-c data-c="2"></math-c></math-n>
+                </math-scr>
+              </math-sup>
+              <math-o><math-c data-c="+"></math-c></math-o>
+              <math-n><math-c data-c="1"></math-c></math-n>
+            </math-scr>
+          </math-sup>
+        </math-root>
       </p>
     </article>
 

@@ -49,6 +49,19 @@ math-root math-o.var {
   font-family: "Math Variant";
 }
 
+math-root math-scr math-o {
+  margin: 0em 0em;
+  font-family: "Math";
+}
+
+math-root math-o.l0 {
+  margin-left: 0em;
+}
+
+math-root math-o.r0 {
+  margin-right: 0em;
+}
+
 math-root math-frac {
   margin: 0em 0.2em;
   vertical-align: 0.1em;
@@ -101,4 +114,13 @@ math-root math-sqrt >math-surd >math-o.var {
 math-root math-sqrt >math-sqrtcont {
   padding: 0.15em 0.2em 0em 0em;
   border-top: 1px solid;
+}
+
+math-root math-sup >math-base {
+}
+
+math-root math-sup >math-scr {
+  margin: -0.2em 0em 0em 0em;
+  vertical-align: top;
+  font-size: 70.7%;
 }
