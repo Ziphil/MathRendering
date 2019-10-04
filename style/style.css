@@ -32,6 +32,11 @@ article a {
   text-decoration: underline;
 }
 
+article div.display-math {
+  margin: 5px 0px;
+  text-align: center;
+}
+
 article math-root {
   color: hsl(240, 80%, 50%);
 }
