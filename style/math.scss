@@ -11,122 +11,117 @@ $fraction-padding: spacing(2);
 $radical-padding: spacing(1);
 
 
+math-n {
+  margin: 0em spacing(0);
+  line-height: 0.8;
+}
+
+
+math-i {
+  margin: 0em spacing(0);
+  line-height: 0.8;
+  font-style: italic;
+}
+
+
+math-o {
+  margin: 0em spacing(4);
+  line-height: 0.8;
+  font-family: "Math";
+
+  &.var {
+    font-family: "Math Variant";
+  }
+
+  math-scr & {
+    margin: 0em spacing(0);
+  }
+
+}
+
+
+math-frac {
+  margin: 0em $fraction-padding;
+  vertical-align: 0.13em;
+  display: inline-block;
+
+  >math-num {
+    margin: 0em 0em;
+    text-align: center;
+    display: block;
+  }
+
+  >math-dencont {
+    width: 100%;
+    display: inline-table;
+  }
+
+  >math-dencont::before {
+    margin: -0.15em 0em - $fraction-padding;
+    height: 1px;
+    border-top: 1px solid;
+    display: block;
+    content: "";
+  }
+
+  >math-dencont >math-den {
+    margin: 0em 0em;
+    text-align: center;
+    display: table-row;
+  }
+
+}
+
+
+math-sqrt {
+
+  >math-surd {
+    margin: 0.25em 0em 0em 0em;
+    vertical-align: top;
+  }
+
+  >math-surd.s1 {
+    margin: 0.95em 0em 0em 0em;
+  }
+
+  >math-surd.s2 {
+    margin: 1.44em 0em 0em 0em;
+  }
+
+  >math-surd >math-o,
+  >math-surd >math-o.var {
+    margin: 0em;
+  }
+
+  >math-sqrtcont {
+    padding: 0.15em $radical-padding 0em 0em;
+    border-top: 1px solid;
+  }
+
+}
+
+
+math-sup {
+  
+  >math-base {
+    margin: 0.15em 0em 0em 0em;
+  }
+
+  >math-scr {
+    margin: 0em 0em 0em 0em;
+    vertical-align: top;
+    font-size: 70.7%;
+  }
+
+}
+
+
 math-root {
   line-height: 0;
 
   * {
-    margin: 0em;
-    padding: 0em;
     display: inline-block;
     box-sizing: border-box;
-  }
-
-  math-c {
-    margin-left: spacing(0);
-    margin-right: spacing(0);
-    line-height: 0.8;
-
-    &::before {
-      display: inline-block;
-      content: attr(data-c);
-    }
-
-  }
-
-  math-n {
-    margin: 0em spacing(0);
-  }
-
-  math-i {
-    margin: 0em spacing(0);
-    font-style: italic;
-  }
-
-  math-o {
-    margin: 0em spacing(4);
-    font-family: "Math";
-
-    &.var {
-      font-family: "Math Variant";
-    }
-
-    math-scr & {
-      margin: 0em spacing(0);
-    }
-
-  }
-
-  math-frac {
-    margin: 0em $fraction-padding;
-    vertical-align: 0.13em;
-    display: inline-block;
-
-    >math-num {
-      margin: 0em 0em;
-      text-align: center;
-      display: block;
-    }
-
-    >math-dencont {
-      width: 100%;
-      display: inline-table;
-    }
-
-    >math-dencont::before {
-      margin: -0.15em 0em - $fraction-padding;
-      height: 1px;
-      border-top: 1px solid;
-      display: block;
-      content: "";
-    }
-
-    >math-dencont >math-den {
-      margin: 0em 0em;
-      text-align: center;
-      display: table-row;
-    }
-
-  }
-
-  math-sqrt {
-
-    >math-surd {
-      margin: 0.25em 0em 0em 0em;
-      vertical-align: top;
-    }
-
-    >math-surd.s1 {
-      margin: 0.95em 0em 0em 0em;
-    }
-
-    >math-surd.s2 {
-      margin: 1.44em 0em 0em 0em;
-    }
-
-    >math-surd >math-o,
-    >math-surd >math-o.var {
-      margin: 0em;
-    }
-
-    >math-sqrtcont {
-      padding: 0.15em $radical-padding 0em 0em;
-      border-top: 1px solid;
-    }
-
-  }
-
-  math-sup {
-    
-    >math-base {
-      margin: 0.15em 0em 0em 0em;
-    }
-
-    >math-scr {
-      margin: 0em 0em 0em 0em;
-      vertical-align: top;
-      font-size: 70.7%;
-    }
-
   }
 
   .l0 {
