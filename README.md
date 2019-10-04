@@ -3,6 +3,10 @@
 </div>
 
 
+## 移転
+現在は、数式用のマークアップ言語の開発と合わせて、[こちら](https://github.com/Ziphil/ZenithalMathWeb)で開発を進めています。
+このリポジトリはもはや更新されません。
+
 ## 概要
 とりあえず[これ](https://ziphil.github.io/MathRendering/)を見てください。
 
