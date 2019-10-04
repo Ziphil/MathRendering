@@ -12,10 +12,11 @@
     <article>
       <h1>Notice</h1>
       <p>
-        To render mathematical symbols beautifully, download the <a href="https://www.stixfonts.org/" target="_blank">STIX fonts</a> first.
+        The spacing is optimised for Times New Roman font.
+        If you would like to render formulae using a different font, you should modify margin or padding values in the stylesheet.
       </p>
       <p>
-        Currently rendering is tested only on the latest version of Google Chrome, so the layout may be off when viewed with a different browser.
+        Rendering is tested only on the latest desktop version of Google Chrome, so the layout may be off when viewed with a different browser.
       </p>
       <h1>Fraction</h1>
       <p>
@@ -100,9 +101,11 @@
         <math-root>
           <math-sqrt>
             <math-surd>
+              <!-- radical symbol -->
               <math-o><math-c data-c="√"></math-c></math-o>
             </math-surd>
             <math-sqrtcont>
+              <!-- content -->
               <math-i><math-c data-c="A"></math-c></math-i>
             </math-sqrtcont>
           </math-sqrt>
@@ -183,7 +186,7 @@
         </math-root>
       </p>
       <p>
-        Currently, the height of a radical symbol must be manually specified.
+        Currently the height of each radical symbol must be manually specified.
         It is a future task to automatically determine it.
       </p>
     </article>
